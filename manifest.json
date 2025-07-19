@@ -1,6 +1,6 @@
 {
-    "name": "Bcom_ca",
-    "short_name": "Bcomca_hub",
+    "name": "bcom_ca",
+    "short_name": "bcom_ca",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
