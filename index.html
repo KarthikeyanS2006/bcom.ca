@@ -15,7 +15,7 @@
     the `--base-href` argument provided to `flutter build`.
   -->
     <!-- <base href="https://github.com/KarthikeyanS2006/app.git.io.git"> -->
-  <base href="/bcom.ca/">
+  <base href="/">
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
@@ -33,7 +33,17 @@
   
   <title>bcomca_hub</title>
   <link rel="manifest" href="manifest.json">
- 
+  <script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker
+      .register('firebase-messaging-sw.js')
+      .then(function(registration) {
+        console.log('✅ Service Worker registered with scope:', registration.scope);
+      }).catch(function(err) {
+        console.log('❌ Service Worker registration failed:', err);
+      });
+  }
+</script>
 </head>
 <body>
   <script src="flutter_bootstrap.js" async></script>
